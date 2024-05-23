@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="./main.js"></script>
+    <title>Palette Picker</title>
+  </head>
+  <body>
+    <main>
+      <h1>Palette Picker</h1>
+      <form aria-labelledby="palette-inputs">
+        <div id="create-your-palette-card">
+          <h2>Add a Palette</h2>
+          <div id="name-your-palette">
+            <label for="palette-name">Palette Name</label>
+            <input type="text" id="palette-name" name="paletteName" placeholder="Name Your Palette" required/>
+          </div>
+        
+          <div>
+            <lable for="color-input1">Color #1</lable>
+            <input type="color" id="color-input1" class="color" name="colorInput1"/>
+          </div>
+    
+          <div>
+            <lable for="color-input">Color #2</lable>
+            <input type="color" id="color-input2" class="color" name="colorInput2"/>
+          </div>
+  
+          <div>
+            <lable for="color-input3">Color #3</lable>
+            <input type="color" id="color-input3" class="color" name="colorInput3"/>
+          </div>
+  
+          <fieldset>
+            <legend>Temperature</legend>
+            <input type="radio" name="paletteTemp" id="neutral-palette" checked/>
+            <lable for="neutral-palette">Neutral</lable>
+  
+            <input type="radio" name="paletteTemp" id="warm-palette"/>
+            <lable for="warm-palette">Warm</lable>
+  
+            <input type="radio" name="paletteTemp" id="cool-palette"/>
+            <lable for="cool-palette">Cool</lable>
+          </fieldset>
+  
+          <button id="create-palette-button">Create your palette</button>
+        </div>
+      </form>
+
+      <section aria-labelledby="saved-palettes">
+        <h2 id="saved-palettes-heading">Palettes</h2>
+        <ul id="saved-palettes">
+        </ul>
+      </section>
+
+    </main>
+  </body>
+</html>
